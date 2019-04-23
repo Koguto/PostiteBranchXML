@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style type="text/css">
+        p, h3, h2, h3 {
+            padding: 0px !important;
+            margin: 0px auto !important;
+        }
+        .header_3 {
+            border: 1px solid #e5e5e5;
+            width: 90%;
+            background-color: #e5e5e5 !important;
+            color: #000;
+            letter-spacing: 2px;
+            padding: 20px !important;
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+<body style="width:90%; height:400px; background-color:#fff !important; margin: 10px auto !important; padding:20px; " >
+    <h3 class="container jumbotron header_3" >Controle de Branchs</h3>
+    <div class="container body-content" style="width:90%; min-height:800px; background-color:#eaffff; padding:30px; border:1px solid #e5e5e5; ">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
